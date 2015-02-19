@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador Singleton];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

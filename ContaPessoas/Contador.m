@@ -24,6 +24,9 @@
     return self;
 }
 
+//Instanciar
+static Contador *cont=nil;
+
 - (void)maisUmCueca {
     boy = boy + 1;
 }
@@ -39,7 +42,16 @@
     return girl;
 }
 
+-(int)getTotal{
+    return boy+girl;
+}
 
++(instancetype)Singleton{
+    if (cont==nil){
+        cont = [[Contador alloc]init];
+    }
+    return cont;
+}
 
 @end
 

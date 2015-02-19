@@ -11,8 +11,11 @@
 - (void)maisUmCueca;
 - (void)maisUmaGata;
 
++(instancetype)Singleton;
+
 -(int)getBoys;
 -(int)getGirls;
+-(int)getTotal;
 
 @end
 
